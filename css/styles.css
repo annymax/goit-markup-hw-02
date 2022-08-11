@@ -150,6 +150,10 @@ body {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  
+  display: block;
+  margin: 0 auto;
+  
 }
 
 .footer-link,
@@ -192,8 +196,19 @@ body {
 .work-list,
 .filtres-list,
 .features-list,
-.team-list {
+.team-list, 
+.portfolio-list {
   display: flex;
+}
+
+.portfolio-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.work-list, .team-list {
+  justify-content: space-between;
 }
 
 .team-item,
